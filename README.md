@@ -8,6 +8,7 @@ Programmet läser in orderdata, kontrollerar att nödvändiga kolumner finns, be
 - Antal returer
 - Försäljning per produktkategori
 - Försäljning per region
+- Returgrad per produktkategori
 
 Rapporterna sparas som csv-filer i mappen "output".
 Projektet har förbättrats med tydligare projektstruktur, felhantering, logging, dataclass och automatiska tester med "pytest".
@@ -24,9 +25,10 @@ order_report_project/
     - reporting.py
     - validation.py
 - output
-    - category_report.csv
     - overview.csv
-    - region_report.csv
+    - returns_by_category.csv
+    - sales_by_category.csv
+    - sales_by_region.csv
 - tests
     - test_validation.py
     - test_processing.py

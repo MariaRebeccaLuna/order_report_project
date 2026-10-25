@@ -84,4 +84,4 @@ Om flera delar av programmet behöver samma sökvägar kan det bli svårare att 
 En "dataclass" som heter "ReportConfig" skapades. Den gör konfigurationen mer samlad och tydlig.
 
 ## Sammanfattning av hela projektet:
-Efter refaktoreringen är projektet uppdelat i tydligare moduler och funktioner. Det har också lagts till felhantering, logging och en dataclass. Den nya strukturen gör projektet lättare att förstå, testa, ändra och vidareutveckla.
+Efter refaktoreringen är projektet uppdelat i tydligare moduler med stöd för felhantering, logging och en dataclass. Programmet skapar samma fyra rapporter som originalet: `overview.csv`, `sales_by_category.csv`, `sales_by_region.csv` och `returns_by_category.csv`. Rapporterna innehåller information om försäljning, antal ordrar, returer och returgrad enligt respektive rapports syfte. Automatiska tester med pytest används för att kontrollera delar av programmets funktionalitet. Den nya strukturen gör koden enklare att förstå, testa, ändra och vidareutveckla.
